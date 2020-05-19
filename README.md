@@ -20,37 +20,28 @@ It is truly a pleasure for me if this project can help you.
 
 The platform I use is Ubuntu 18.04.
 
-### OpenCV
-
-Dowload and install instructions can be found [here](https://opencv.org/releases/). I am using OpenCV 3.4.8.
-
-### Eigen
-
-Dowload and install instructions can be found [here](https://opencv.org/releases/). You can just use 
-``` sudo apt-get install libeigen3-dev ```
-to install it in Ubuntu.
-
-### Sophus
-Dowload and install instructions can be found [here](https://github.com/strasdat/Sophus).
-
-### g2o
-Dowload and install instructions can be found [here](https://github.com/RainerKuemmerle/g2o).
-
-### Caffe
-The CPU verion is enough. Dowload and install instructions can be found [here](http://caffe.berkeleyvision.org/install_apt.html). This is the dependency of DeepLCD library.
-
-NOTICE: Please make sure your caffe is installed in ~/caffe, or you need to change its path in CMakeLists.txt.
-
-### Seq-CALC
-[Seq-CALC](https://github.com/Mingrui-Yu/Seq-CALC) is a loop detection method based on [CALC](https://github.com/rpng/calc) with the help of sequence match. It is in Thirdparty/SeqCALC folder
-
-### Pangolin
-Dowload and install instructions can be found [here](https://github.com/stevenlovegrove/Pangolin)
-
-### Others
 * C++11
 * Boost filesystem
 * Google Logging Library (glog)
+
+* OpenCV: Dowload and install instructions can be found [here](https://opencv.org/releases/). I am using OpenCV 3.4.8.
+
+* Eigen: Dowload and install instructions can be found [here](https://opencv.org/releases/). You can just use 
+``` sudo apt-get install libeigen3-dev ```
+to install it in Ubuntu.
+
+* Sophus: Dowload and install instructions can be found [here](https://github.com/strasdat/Sophus).
+
+* g2o: Dowload and install instructions can be found [here](https://github.com/RainerKuemmerle/g2o).
+
+* Caffe: Dowload and install instructions can be found [here](http://caffe.berkeleyvision.org/install_apt.html). This is the dependency of Seq-CALC library. Notice that please make sure your caffe is installed in ~/caffe, or you need to change its path in CMakeLists.txt.
+
+* CUDA: Highly Recommended for faster loop detection, but caffe in CPU version is also OK.
+
+*  Pangolin:Dowload and install instructions can be found [here](https://github.com/stevenlovegrove/Pangolin)
+
+* Seq-CALC: [Seq-CALC](https://github.com/Mingrui-Yu/Seq-CALC) is a loop detection library based on [CALC](https://github.com/rpng/calc) with the help of sequence match. It is maintained as a submodule in Thirdparty/SeqCALC folder.
+
 
 TIPS: There may be some dependencies I missed. Please open an issue if you face any problem.
 
@@ -58,15 +49,20 @@ TIPS: There may be some dependencies I missed. Please open an issue if you face 
 
 Clone the repository:
 ```
-git clone https://github.com/Mingrui-Yu/A-Simple-Stereo-SLAM-System-with-Deep-Loop-Closing
+git clone https://github.com/Mingrui-Yu/A-Simple-Stereo-SLAM-System.git
+```
+
+Clone the Thirdparty submodule:
+```
+git submodule init
+git submodule update
 ```
 
 Build:
 ```
-mkdir build
-cd build
-cmake ..
-make
+cd A-Simple-Stereo-SLAM-System
+chmod +x build.sh
+./build.sh
 ```
 
 This will create libmyslam.so in /lib folder and the executables in /bin folder.
@@ -111,6 +107,8 @@ In LoopClosing, it will first try to detect a Candidate Loop KF of the Current K
 ***
 
 There must be some mistakes in the project as I am just a newcomer to visual SLAM. Please open an issue if you find any problem, and I will be deeply grateful for your correction and advice.
+
+**Both the system and the Seq-CALC library are parts of my underground thesis. More details will be added after my defense.**
 
 
 
