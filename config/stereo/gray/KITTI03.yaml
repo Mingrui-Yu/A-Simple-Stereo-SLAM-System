@@ -76,7 +76,7 @@ Map.activeMap.size: 7
 # Loop Closing Parameters
 #--------------------------------------------------------------------------------------------
 
-LCD.similarityScoreThreshold.high: 0.91
+LCD.similarityScoreThreshold.high: 0.95
 LCD.similarityScoreThreshold.low: 0.90
 
 # if you want to see the match and reprojection result, please set this as 1
@@ -99,7 +99,7 @@ LCD.SeqCALC.nCandidateResults: 20
 
 # if you want to see the frame and trajectory in real time, please set this as 1
 # note that this will slow down the speed of the system
-Viewer.bShow: 0
+Viewer.bShow: 1
 
 # some parameters for pangolin
 Viewer.KeyFrameSize: 0.1

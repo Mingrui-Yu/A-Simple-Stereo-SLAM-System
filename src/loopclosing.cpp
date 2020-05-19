@@ -33,9 +33,9 @@ LoopClosing::LoopClosing(){
     float nResults = Config::Get<int>("LCD.SeqCALC.nCandidateResults");
 
     // SeqCALC for loop detection
-    _mpDeepLCD = deeplcd::DeepLCD::Ptr(new deeplcd::DeepLCD("Thirdparty/SeqCALC/calc_model/deploy.prototxt", 
-		"Thirdparty/SeqCALC/calc_model/calc.caffemodel", 
-		"Thirdparty/SeqCALC/PCAparams", 0)); // GPU_ID=0, if only CPU is used, please set this to -1
+    _mpDeepLCD = deeplcd::DeepLCD::Ptr(new deeplcd::DeepLCD("Thirdparty/Seq-CALC/calc_model/deploy.prototxt", 
+		"Thirdparty/Seq-CALC/calc_model/calc.caffemodel", 
+		"Thirdparty/Seq-CALC/PCAparams", 0)); // GPU_ID=0, if only CPU is used, please set this to -1
 
     _mpDeepLCD->SetParameters(ds, Vmax, Vinterval, nResults); // ds, V_max, V_interval, numCandidateResult
     // descriptor matcher using opencv

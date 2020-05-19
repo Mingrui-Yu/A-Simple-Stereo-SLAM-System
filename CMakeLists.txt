@@ -92,7 +92,7 @@ if (${CUDA_FOUND})
                 ${CSPARSE_LIBRARY}
                 ${Caffe_LIBS}
                 ${Boost_LIBRARIES}
-                ${PROJECT_SOURCE_DIR}/Thirdparty/SeqCALC/build/libdeeplcd.so
+                ${PROJECT_SOURCE_DIR}/Thirdparty/Seq-CALC/build/libdeeplcd.so
                 ${CUDA_LIBRARIES}
                 ${CUDA_CUBLAS_LIBRARIES}
                 ${CUDA_curand_LIBRARY}
@@ -110,7 +110,7 @@ else()
                 ${CSPARSE_LIBRARY}
                 ${Caffe_LIBS}
                 ${Boost_LIBRARIES}
-                ${PROJECT_SOURCE_DIR}/Thirdparty/SeqCALC/build/libdeeplcd.so
+                ${PROJECT_SOURCE_DIR}/Thirdparty/Seq-CALC/build/libdeeplcd.so
                 )
 endif()
 
@@ -133,7 +133,7 @@ execute_process(
 enable_testing()
 ############### source and test ######################
 include_directories(${PROJECT_SOURCE_DIR}/include)
-include_directories(${PROJECT_SOURCE_DIR}/Thirdparty/SeqCALC/include)
+include_directories(${PROJECT_SOURCE_DIR}/Thirdparty/Seq-CALC/include)
 
 add_subdirectory(src)
 # add_subdirectory(test)
