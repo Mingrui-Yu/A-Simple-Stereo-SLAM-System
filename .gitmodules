@@ -1,0 +1,4 @@
+[submodule "Thirdparty/Seq-CALC"]
+	path = Thirdparty/Seq-CALC
+	url = https://github.com/Mingrui-Yu/Seq-CALC.git
+	branch = v1.0

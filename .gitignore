@@ -1,0 +1,18 @@
+build
+bin
+lib
+oldCodeBackup
+notes
+loopImages
+Thirdparty/SeqCALC/
+
+calc_model
+calc.tar.gz
+debug.txt
+run.sh
+
+# vscode
+.VSCodeCounter
+.vscode
+
+
