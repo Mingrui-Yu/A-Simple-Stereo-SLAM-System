@@ -108,7 +108,6 @@ In LoopClosing, it will first try to detect a Candidate Loop KF of the Current K
 
 There must be some mistakes in the project as I am just a newcomer to visual SLAM. Please open an issue if you find any problem, and I will be deeply grateful for your correction and advice.
 
-**Both the system and the Seq-CALC library are parts of my underground thesis. More details will be added after my defense.**
 
 
 
