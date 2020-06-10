@@ -24,4 +24,29 @@ In LoopClosing, it will first try to detect a Candidate Loop KF of the Current K
 
 # Performance
 
+Tracking and localization:
+<p align="center">
+  <img width="80%" src="https://raw.githubusercontent.com/Mingrui-Yu/A-Simple-Stereo-SLAM-System/master/docs/pics/running.gif">
+</p>
 
+Loop detection, local feature matching, and reprojection result of keypoints:
+<p align="center">
+  <img width="80%" src="https://raw.githubusercontent.com/Mingrui-Yu/A-Simple-Stereo-SLAM-System/master/docs/pics/loopDetection.gif">
+</p>
+
+Loop correction:
+<p align="center">
+  <img width="80%" src="https://raw.githubusercontent.com/Mingrui-Yu/A-Simple-Stereo-SLAM-System/master/docs/pics/loopCorrection.gif">
+</p>
+
+Picture below shows the trajectory results on KITTI 00, 05, 07. To demonstrate the significance of the loop closure module, we show both the performances with loop closure and without loop closure.
+
+<p align="center">
+  <img width="80%" src="https://raw.githubusercontent.com/Mingrui-Yu/A-Simple-Stereo-SLAM-System/master/docs/pics/experiment_KITTI_loopEffect.png">
+</p>
+
+Picture below shows the trajectory results on other KITTI sequences. Notice that since this is just a simple SLAM system without many detailed optimization, the performance of this system is not so outstanding.
+
+<p align="center">
+  <img width="80%" src="https://raw.githubusercontent.com/Mingrui-Yu/A-Simple-Stereo-SLAM-System/master/docs/pics/experiment_KITTI_trajectory.png">
+</p>
