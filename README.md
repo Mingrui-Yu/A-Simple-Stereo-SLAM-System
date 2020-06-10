@@ -8,6 +8,8 @@ I chose to build this system based on stereo cameras because it is easiler, with
 
 It is truly a pleasure for me if this project can help you. 
 
+More details and perfomances of the system can be found [here](https://mingrui-yu.github.io/A-Simple-Stereo-SLAM-System/).
+
 ## Related References
 
 ### Chapter 13, Visual SLAM: From Theory to Practice

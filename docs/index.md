@@ -42,11 +42,11 @@ Loop correction:
 Picture below shows the trajectory results on KITTI 00, 05, 07. To demonstrate the significance of the loop closure module, we show both the performances with loop closure and without loop closure.
 
 <p align="center">
-  <img width="80%" src="https://raw.githubusercontent.com/Mingrui-Yu/A-Simple-Stereo-SLAM-System/master/docs/pics/experiment_KITTI_loopEffect.png">
+  <img width="100%" src="https://raw.githubusercontent.com/Mingrui-Yu/A-Simple-Stereo-SLAM-System/master/docs/pics/experiment_KITTI_loopEffect.png">
 </p>
 
 Picture below shows the trajectory results on other KITTI sequences. Notice that since this is just a simple SLAM system without many detailed optimization, the performance of this system is not so outstanding.
 
 <p align="center">
-  <img width="80%" src="https://raw.githubusercontent.com/Mingrui-Yu/A-Simple-Stereo-SLAM-System/master/docs/pics/experiment_KITTI_trajectory.png">
+  <img width="100%" src="https://raw.githubusercontent.com/Mingrui-Yu/A-Simple-Stereo-SLAM-System/master/docs/pics/experiment_KITTI_trajectory.png">
 </p>
